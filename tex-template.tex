@@ -1,0 +1,58 @@
+\documentclass[twoside]{article}
+
+\usepackage[scaled]{beramono}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{emptypage}
+\usepackage[
+	margin=1in,
+	headheight=17pt,
+	includeheadfoot,
+	heightrounded,
+]{geometry}
+
+\newcommand{\cnet}{CNET}
+\newcommand{\classsection}{CLASS SECTION}
+\newcommand{\homeworktitle}{HOMEWORK TITLE}
+\newcommand{\studentname}{STUDENT NAME}
+
+\lhead{\textbf{CNET:} \cnet}
+\chead{\textbf{\homeworktitle}}
+\rhead{\studentname}
+\rfoot{\textbf{Section:} \classsection}
+
+\pagestyle{fancy}
+
+\UseRawInputEncoding
+
+\usepackage{listings}
+
+\lstnewenvironment{haskell-code}{
+\lstset{language=Haskell,
+showstringspaces=false,
+tabsize=4,
+commentstyle={\itshape},
+basicstyle={\ttfamily},
+breaklines=true,
+postbreak=\mbox{$\hookrightarrow$}}
+} {}
+
+\lstnewenvironment{plain-text}{
+\lstset{
+showstringspaces=false,
+tabsize=4,
+commentstyle={\itshape},
+basicstyle={\ttfamily},
+breaklines=true,
+postbreak=\mbox{$\hookrightarrow$}}
+} {}
+
+
+\begin{document}
+
+CODE
+
+\end{document}
